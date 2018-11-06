@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  /* background-image: radial-gradient(#e6b980 50%, #eacda3 90%); */
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 60px;
+  padding: 50px 0 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+div.container h2 {
+  font-size: 40px;
+}
+
+
+div.container ul {
+  margin: 30px;
+  list-style: none;
+}
+
+div.container ul li {
+  font-size: 40px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container {
+  width: 1000px;
+  margin: 0 auto 80px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 1px black;
+  padding: 2% 0;
+  border-radius: 1%;
+}
+
+div.container input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  float: left;
+  border: 1px solid #999;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+div.container input.add {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+
+div.container input.search {
+  width: calc(300px + 150px);
+  border-radius: 10px;
+}
+
+div.container form {
+  font-size: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.container button.add {
+  display: block;
+  border: none;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #999;
+  border-left: none;
+  background-color: #337ab7;
+  cursor: pointer;
+  transition: .2s;
+}
+
+div.container button.add:hover {
+  background-color: #2c689c;
+}
+
+
+div.container button.delete {
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(220, 80, 80);
+  border: none;
+  border-radius: 50%;
+  color: #e5e5e5;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.container .delete i {
+  line-height: 30px;
+  font-weight: 700;
+}
+
+div.container button.delete:hover {
+  background-color: #C53032;
+}
